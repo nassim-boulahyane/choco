@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+body{
+    background-color: #2C1E1E;
+    font-family: serif;
+    
+}
+.none{
+    display: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    
+    
+}
+.color{
+    background-color: #1b1212;
+}
+#logo{
+    height: 80px;
+}
+nav{
+   width: 100%; 
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    right:0;
+    justify-content: right;
+    align-items: center;
+}
+nav ul li a{
+    padding: 1em;
+    color: #FFD543;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+main{
+    background-image: url(/images/accueil1.jpg);
+    background-size: cover;
+   height: 80rem;
+}
+#titre{
+    text-align: center;
+    padding-top:15em ;
+}
+#titre h1{
+    font-size: 7em;
+    color: #FFD543;
+    font-weight: bold;
+    font-family: 'Fjalla One' ;
+    text-align: center;
+}
+#button{
+   padding: 10em;
+    text-align: center;
+}
+#button button{
+    background-color: #2C1E1E;
+    padding: 2em;
+}
+#button button a{
+    color: #FFD543;
+    font-size: 1.5em;
+}
+footer{
+    display: flex;
+    font-weight: bold;
+    font-family: serif;
+}
+footer section{
+    width: 30%;
+    padding: 1em;
+}
+footer h2{
+    font-family: 'fjalla one';
+    color: #FFD543;  
+}
+footer p{
+    font-size: 1.2em;
+}
+section img{
+    height: 80px;
+    padding: 0.7em;
+}
+.none{
+    display: none;
+}
+/*Pages Produits*/
+
+.AfficheProduit{
+    display: flex;
+    padding: 6em 6em; 
+    
+    background-color: #B65F28;
+   
+}
+.imageProduit{
+    padding: 3em;
+    width: 50%;
+}
+.imageProduit img{
+height: auto;
+
+}
+.descriptionProduit{
+    padding: 3em;
+    width: 50%;
+}
+.descriptionProduit p{
+    padding-bottom: 1em;
+}
+.descriptionProduit button{
+   padding: 0.5em;
+   font-weight: bolder;
+   border: solid;
+   background-color: #FFD543;
+   cursor: pointer;
+   margin-left: 1.5em;
+}
+.ingredients{
+    background-color: #B65F28;
+    padding:0em 10em 3em 10em;
+}
+.ingredients h3{
+    margin: 0;
+}
+/*pop up*/
+#openBtn img{
+    height: 40px;
+    cursor: pointer;
+}
+#dialog{
+    position: fixed; 
+    height: auto; 
+    background-color: #5e2c0e;
+}
+.space{
+    height: 20em;
+}
+#cart{
+display: grid;
+justify-content: center;
+font-weight: bold;
+}
+#cart button{
+    width: 250px;
+    padding: 0.4em;
+    margin: 1em;
+    background-color: #FFD543;
+    color:black;
+    font-weight: bold;
+    cursor: pointer;
+}
+#dialog h1{
+    text-align: center;
+}
+#closeBtn img{
+    height: 20px;
+    cursor: pointer;
+}
+/*boutique*/
+#boutique{
+    text-align: center;
+    color: #FFD543;
+}
+#products{
+    color:#B65F28;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1em;
+}
+#products img{
+    height: 120px;
+}
+#products a{
+    text-decoration: none;
+    color: #FFD543;
+    font-size: 1.5em;
+}
+.boutonBoutique{
+padding: 0.5em;
+   font-weight: bolder;
+   border: solid;
+   background-color: #FFD543;
+   cursor: pointer;
+   margin-left: 1.5em;
+}
+
+/*filtre et produits*/
+
+  aside{
+    color: #FFD543;
+    float: left;
+    width: 25%;
+    border:solid black;
+    background-color:#B65F28 ;
+    height: auto;
+}
+ 
+  .filterDiv{
+    display: none;
+    text-align: center;
+  }
+  .show {
+    display: block;
+  }
+ 
+.catTitre{
+    color:#1b1212;
+    left: 0.2em;
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+  #Catégories div{
+    padding: 0.3em 0;
+  }
+  #Catégories label{
+    font-size: 1.3em;
+  }
+  #Catégories input{
+    cursor: pointer;
+  }
+  .titreFiltre{
+    text-align: center;
+    color: #2C1E1E;
+  }
+  .panier{
+    background-color: #B65F28;
+    padding: 0.5em;
+    border-radius: 3px;
+    color: #ddd;
+  }
+  #Filtreprix div{
+    padding: 0.5em;
+    font-weight: bold;
+  }
+  #FiltreNote div{
+    padding: 0.5em;
+    font-weight: bold;
+  }
+
+@media only screen and (max-width: 760px){
+  
+    footer{
+        display: block;
+       
+    }
+    footer section{
+        padding:1em ;
+        width: auto;
+    }
+    .burger{
+        display: block;
+       text-align: right;
+       width: 100%;
+    }
+    .hide{
+        display: none;
+    }
+    .visible{
+        display: block;
+    }
+    nav ul{
+        display: block; 
+    }
+    nav ul li{
+        padding: 0.5em;
+    }
+    aside{
+        float: none;
+        margin: 2em;
+        width: 90%;
+        height: auto
+    }  
+    
+}
+@media only screen and (max-width: 950px){
+    footer{
+        display: block;
+       
+    }
+    footer section{
+        padding:1em ;
+        width: auto;
+    }
+    /*Page produit*/
+    .AfficheProduit{
+        display: block;
+        padding: 0;
+        
+    }
+    .imageProduit {
+      text-align: center;
+     width: 100%;
+     padding: 3em 0;
+    }
+    .descriptionProduit{
+        width: 90%;
+    }
+    .ingredients{
+        padding: 0 3em 8em 3em;
+    }
+  
+    
+}
+@media only screen and (max-width: 1300px){
+
+#products{
+    grid-template-columns: 1fr 1fr ;
+}
+
+
+.imageProduit img{
+    height: 15em;
+    
+    }
+}

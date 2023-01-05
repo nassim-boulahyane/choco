@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="/normalize.css">
+    <title>Document</title>
+   
+</head>
+<body>
+    <header class="color">
+        <div>
+            <a href="/index.html"><img  id="logo"src="images/logo.png" alt="logo"></a>
+        </div>
+        <div class="burger none">
+            <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px"><path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"/></svg>
+        </div>
+        
+            <nav class="hide ">
+                <ul>
+                    <li>
+                        <a href="/index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="/boutique2.html">Boutique</a>
+                    </li>
+                    <li>
+                        <a  id="openBtn"><img src="/images/cart3-svgrepo-com.svg" alt=""></a>
+                    </li>
+                </ul>                
+            </nav>
+    </header>
+    <!--menuburger-->
+    <nav class="hide navbar none">
+        <ul>
+            <li>
+                <a href="/index.html">Accueil</a>
+            </li>
+            <li>
+               
+                <a href="/boutique.html">Boutique</a>
+            </li>
+            <li>
+              <a  id="openBtn"><img src="/images/cart3-svgrepo-com.svg" alt=""></a>
+            </li>
+        </ul>                
+    </nav>
+     <!--menuburger-->
+     <!--pop up panier-->
+
+<dialog id="dialog">
+  
+<div >
+<a id="closeBtn"><img src="/images/close.png" alt=""></a>
+<h1>PANIER</h1>
+</div>
+<div class="space">
+
+</div>
+<div id="cart" >
+  <p>TOTAL :</p>
+  <button>RENITIALISER LE PANIER</button>
+  <button>VALIDER LE PANIER</button>
+</div>
+
+</dialog>
+
+
+
+
+     <!--pop up panier-->
+     <h1 id="boutique">BOUTIQUE</h1>
+     <aside>
+        <h2 class="titreFiltre">FILTRE</h2>
+        <div id="Catégories">
+          <h2 class="catTitre">Catégories</h2>
+          <ul>
+           <div>
+            <input type="checkbox" class=" " onclick="filterSelection('Tous')" name="Tous" checked>
+            <label for="Tous">Tous</label>
+          </div>
+          <div>
+            <input type="checkbox" class=" " onclick="filterSelection('blanc')" name="Chocolat blanc" checked>
+            <label for="Chocolat blanc">Chocolat blanc</label>
+          </div>
+          <div>
+            <input type="checkbox" class=" " onclick="filterSelection('lait')" name="lait" checked>
+            <label for="lait">Chocolat au lait</label>
+          </div>
+          <div>
+            <input type="checkbox" class=" " onclick="filterSelection('noir')" name="noir" checked>
+            <label for="noir">Chocolat noir</label>
+          </div>
+          <div>
+            <input type="checkbox" class=" " onclick="filterSelection('noix')" name="noix" checked>
+            <label for="noix"> Noix/Noisette</label>
+          </div>
+          <div>
+            <input type="checkbox" class=" " onclick="filterSelection('fruit')" name="Fruit" checked>
+            <label for="Fruit">Fruit</label>
+          </div>
+          <div>
+            <input type="checkbox" class=" " onclick="filterSelection('caramel')" name="caramel" checked>
+            <label for="caramel">Caramel</label>
+          </div>
+          <div>
+            <input type="checkbox" class=" " onclick="filterSelection('liqueur')" name="liqueur" checked>
+            <label for="liqueur">Liqueur</label>
+          </div>
+          </ul>
+        </div>
+        <div id="Filtreprix">
+          <h2 class="catTitre">prix</h2>
+          <div>
+          <label for="prix"> Prix min</label>
+          <input type="number" min="0" max="100" name="prix">
+        </div>
+        <div>
+          <label for="prix"> Prix max</label>
+          <input type="number" min="0" max="100" name="prix">
+        </div>
+         
+        </div>
+        <div id="FiltreNote">
+          <h2 class="catTitre">Note</h2>
+          <div>
+          <label for="note"> Note min</label>
+          <input type="number" min="0" max="100" name="prix">
+        </div>
+        <div>
+          <label for="note"> Note max</label>
+          <input type="number" min="0" max="100" name="prix">
+        </div>
+         
+        </div>
+        
+     </aside>
+     <section id="products">
+        <div id="1" class="filterDiv lait noix fruit">
+          <a href="/produits1.html"><img src="/images/produit1.jpg" alt="p1"></a>
+          <a href="/produits1.html"><h3>Cerisier</h3></a>
+          <h4>prix: 2.99 €</h4>
+          <h4>note: 5</h4>
+          <button class="boutonBoutique">AJOUTER AU PANIER</button>
+        </div>
+        <div  id="2" class="filterDiv lait caramel">
+          <a href="/produit2.html"><img src="/images/produit2.jpg" alt="p2"></a>
+          <a href="/produit2.html"><h3>Coulis Caramel</h3></a>
+          <h4>prix: 13.99€</h4>
+          <h4>note: 3</h4>
+          <button class="boutonBoutique">AJOUTER AU PANIER</button>
+        </div>
+        <div  id="3" class="filterDiv lait liqueur">
+          <a href="/produit3.html"><img src="/images/produit3.jpg" alt="p3"></a>
+          <a href="/produit3.html"><h3>Douceur exotique</h3></a>
+          <h4>prix: 4.99 €</h4>
+          <h4>note: 4</h4>
+          <button class="boutonBoutique">AJOUTER AU PANIER</button>
+        </div>
+        <div  id="4" class="filterDiv blanc">
+          <a href="/produit4.html"><img src="/images/produit4.jpg" alt="p4"></a>
+          <a href="/produit4.html"><h3>Blanc Passion</h3></a>
+          <h4>prix: 5.99 €</h4>
+          <h4>note: 5</h4>
+          <button class="boutonBoutique">AJOUTER AU PANIER</button>
+        </div>
+        <div  id="5" class="filterDiv lait noix">
+          <a href="/produit5.html"><img src="/images/produit5.jpg" alt="p5"></a>
+          <a href="/produit5.html"><h3>Douceur croquante</h3></a>
+          <h4>prix: 2.99 €</h4>
+          <h4>note: 3</h4>
+          <button class="boutonBoutique">AJOUTER AU PANIER</button>
+        </div>
+        <div id="6"class="filterDiv lait blanc">
+          <a href="/produit6.html"><img src="/images/produit6.jpg" alt="p6"></a>
+          <a href="/produit6.html"><h3>Le Zèbre</h3></a>
+          <h4>prix: 19.99 €</h4>
+          <h4>note: 4</h4>
+          <button class="boutonBoutique">AJOUTER AU PANIER</button>
+        </div>
+        <div id="7" class="filterDiv lait noir fruit liqueur">
+          <a href="/produit7.html"><img src="/images/produit7.jpg" alt="p7"></a>
+          <a href="/produit7.html"><h3>Coulis Fraise</h3></a>
+          <h4>prix: 9.99 €</h4>
+          <h4>note: 4</h4>
+          <button class="boutonBoutique">AJOUTER AU PANIER</button>
+        </div>
+        <div id="8" class="filterDiv noir">
+          <a href="/produit8.html"><img src="/images/produit8.jpg" alt="p8"></a>
+          <a href="/produit8.html"><h3>Noir Passion</h3></a>
+          <h4>prix: 4.99 €</h4>
+          <h4>note: 5</h4>
+          <button class="boutonBoutique">AJOUTER AU PANIER</button>
+        </div>
+        <div id="9" class="filterDiv lait caramel noix">
+          <a href="/produit9.html"><img src="/images/produit9.jpg" alt="p9"></a>
+          <a href="/produit9.html"><h3>Fantaisie</h3></a>
+          <h4>prix: 2.99 €</h4>
+          <h4>note: 5</h4>
+          <button class="boutonBoutique">AJOUTER AU PANIER</button>
+        </div>
+        <div id="10" class="filterDiv caramel">
+          <a href="/produit10.html"><img src="/images/produit10.jpg" alt="p10"></a>
+          <a href="/produit10.html"><h3>Caramel Salé</h3></a>
+          <h4>prix: 14.99 €</h4>
+          <h4>note: 4</h4>
+          <button class="boutonBoutique">AJOUTER AU PANIER</button>
+        </div>
+
+
+
+     </section>
+
+
+
+     <footer class="color">
+        <section>
+         <h2>Choco Pap</h2>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor vel consectetur dolorem nobis nulla esse laborum. Velit, quidem.</p>
+ 
+        </section>
+        <section>
+         <h2>Contact</h2>
+         <p>Adresse: 51 rue du chocolat 75000 Paris</p>
+         <p>Téléphone: 01 23 45 67 89</p>
+         <p>Horaires: 9h00-17h00 du Lundi au Vendredi</p>
+        </section>
+        <section>
+        <img src="images/facebook.svg" alt="fb">
+        <img src="images/twitter.svg" alt="tw">
+        <img src="images/instagram.svg" alt="inst">
+        </section>
+        
+     </footer>
+     <script src="/burger.js"></script>
+     <script src="/filtre.js"></script>
+     <script src="/produits.js"></script>
+    
+</body>
+</html>
+
+
