@@ -126,25 +126,95 @@ height: auto;
 .ingredients h3{
     margin: 0;
 }
+
+
+
 /*pop up*/
+.products-cart{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.238);
+}
+.product{
+    justify-content: center;
+    background-color: #55290d;
+    width: 45%;
+    margin: 0 auto;
+    left: 0;
+}
 #openBtn img{
     height: 40px;
     cursor: pointer;
 }
 #dialog{
+    width: 650px;
     position: fixed; 
     height: auto; 
     background-color: #5e2c0e;
+    
 }
-.space{
-    height: 20em;
+.products-container{
+
+    max-width: 650px;
+    justify-content: space-around;
 }
-#cart{
+.products-cart ion-icon {
+ font-size: 25px;
+ color: #FFD543;
+ margin-left: 10px;
+ margin-right: 10px;
+ cursor: pointer;
+ max-width: 650px;
+ display: flex-end;
+ 
+
+}
+.product-header {
+    max-width: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.566);
+   
+    
+}
+.product-title{
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    
+}
+.product-price{
+    width: 15%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.product-quantity{
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.product-total{
+    width: 10%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.img-cart{
+width: 75px;
+padding: 1em;
+
+}
+#button-cart{
 display: grid;
 justify-content: center;
 font-weight: bold;
 }
-#cart button{
+#button-cart button{
     width: 250px;
     padding: 0.4em;
     margin: 1em;
@@ -160,7 +230,16 @@ font-weight: bold;
     height: 20px;
     cursor: pointer;
 }
+
+.basketTotalTitle {
+    width: 30%;
+}
+.basketTotal {
+    width: 10%;
+}
+
 /*boutique*/
+
 #boutique{
     text-align: center;
     color: #FFD543;

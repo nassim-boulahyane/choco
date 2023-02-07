@@ -26,8 +26,8 @@
                     <li>
                         <a href="/boutique2.html">Boutique</a>
                     </li>
-                    <li class="cart">
-                        <a  id="openBtn"><img src="/images/cart3-svgrepo-com.svg" alt=""><span>0</span></a>
+                    <li >
+                        <a class="cart" id="openBtn"><img src="/images/cart3-svgrepo-com.svg" alt=""><span>0</span></a>
                     </li>
                 </ul>                
             </nav>
@@ -56,11 +56,21 @@
 <a id="closeBtn"><img src="/images/close.png" alt=""></a>
 <h1>PANIER</h1>
 </div>
-<div class="space">
+<div class="products-container">
+<div class="product-header">
+  <h5 class="product-title">PRODUIT</h5>
+  <h5 class="product-price">PRIX</h5>
+  <h5 class="product-quantity">QUANTITE</h5>
+<h5 class="product-total">TOTAL</h5>
+</div>
+<div class="products-cart">
 
 </div>
-<div id="cart" >
-  <p>TOTAL :</p>
+</div>
+<div class="cart-total">
+  
+</div>
+<div id="button-cart" >
   <button>RENITIALISER LE PANIER</button>
   <button>VALIDER LE PANIER</button>
 </div>
@@ -239,6 +249,7 @@
      <script src="/burger.js"></script>
      <script src="/filtre.js"></script>
      <script src="/produits.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     
 </body>
 </html>
